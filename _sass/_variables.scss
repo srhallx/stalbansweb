@@ -17,19 +17,21 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
+// Theme colors
+$purple:  #392f7b !default;
+$pink:    #BA467B !default;
+$lightpurple: #7D68A2 !default;
+
 $blue:    #033C73 !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #C71C22 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #DD5600 !default;
 $green:   #73A839 !default;
 $teal:    #20c997 !default;
 $cyan:    #2FA4E7 !default;
 
-$primary:       $cyan !default;
-$secondary:     $gray-200 !default;
+$primary:       $purple !default;
+$secondary:     $pink !default;
 $success:       $green !default;
 $info:          $blue !default;
 $warning:       $yellow !default;
@@ -43,7 +45,7 @@ $body-color:    $gray-700 !default;
 
 // Fonts
 
-$headings-color:         $cyan !default;
+$headings-color:         $purple !default;
 
 // Dropdowns
 
@@ -53,5 +55,5 @@ $dropdown-link-hover-bg:         $primary !default;
 
 // Navbar
 
-$navbar-dark-color:                 rgba($white,.8) !default;
+$navbar-dark-color:                 rgba($purple,1) !default;
 $navbar-dark-hover-color:           $white !default;
