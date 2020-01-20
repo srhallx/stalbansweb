@@ -2,23 +2,9 @@
 layout: default
 ---
 
-<!DOCTYPE html>
-<html>
-  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-
-<head>
-</head>
-
 <div id="wrapper">
-  <div class="navbar main-menu">
-    <ul class="nav">
-      <li><a href="#" class="menu-menu sficon-menu" title="Home"></a></li>
-      <li><a href="nearby.cfm" class="menu-location sficon-location" title="Nearby"></a></li>
-      <li><a href="https://www.facebook.com/musicatstalbans/?ref=ts" class="menu-location sficon-facebook" title="Facebook" style="opacity: .99;"></a></li>
-      <li><a href="https://twitter.com/MusicatStAlbans" class="menu-location sficon-twitter" title="Twitter" style="opacity: .99;"></a></li>
-    </ul>
-  </div>
+  
+  {%- include carousel.html height="100" unit="%" duration="7" -%}
 
   <div id="main-wrap">
     <div class="inner-wrap scroll-pane overthrow">
@@ -53,4 +39,3 @@ layout: default
   </div>
 </div>
 
-</html>

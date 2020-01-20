@@ -11,11 +11,11 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
 // Navbar ======================================================================
 
 .bg-primary {
-  @include btn-shadow($primary);
+  @include btn-shadow($purple);
 }
 
 .bg-dark {
-  @include btn-shadow($blue);
+  @include btn-shadow($purple);
 }
 
 .bg-light {
@@ -25,6 +25,18 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
 .navbar-brand,
 .nav-link {
   text-shadow: $text-shadow
+}
+
+.navbar.main-menu {
+  background-color: $purple;
+}
+
+.navbar.main-menu .nav {
+  background: $purple;
+}
+
+.navbar.main-menu .nav>li>a:hover {
+  background: $lightpurple
 }
 
 // Buttons =====================================================================
@@ -101,3 +113,10 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
 // Progress bars ===============================================================
 
 // Containers ==================================================================
+
+// Images ======================================================================
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
