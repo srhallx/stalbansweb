@@ -1,0 +1,18 @@
+<div>
+    {% for event in site.posts %}
+    <div class="d-block w-100" style="height: 800px;">
+        <img class="floating-image" src="images/masalogo.png" />
+        <div class="floating-title">
+          <H1 class="title">{{ event.title }}</H1>
+          <H6 class="subtitle">{{ event.datetime }}</H6>
+        </div>
+        <img src="{{ event.smallimage }}">
+        <H2>{{ event.title }}</H2>
+        <H4>{{ event.datetime }}</H4>
+        {{ event.description }}
+        <a href="{{ event.ticketlink }}">BUY TICKETS</a>
+      </div>
+    </div>
+
+    {% endfor %}
+</div>
