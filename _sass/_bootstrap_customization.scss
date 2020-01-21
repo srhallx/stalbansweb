@@ -146,6 +146,21 @@ H6.subtitle {
   font-family: avenir next lt w01 bold,'quattrocento sans 700',Helvetica,sans-serif;
 }
 
+//Event Cards
+// ul.flowlist li {
+// display: inline;
+// list-style-type: none;
+// }
+
+.card {
+  transition: 0.2s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 // Images ======================================================================
 img.center {
   display: block;

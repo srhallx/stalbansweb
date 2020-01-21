@@ -1,18 +1,16 @@
-<div>
+<div class="card-columns" style="display:block; max-height: 100%; width: 800px; overflow: auto; overflow-x: hidden;">
     {% for event in site.posts %}
-    <div class="d-block w-100" style="height: 800px;">
-        <img class="floating-image" src="images/masalogo.png" />
-        <div class="floating-title">
-          <H1 class="title">{{ event.title }}</H1>
-          <H6 class="subtitle">{{ event.datetime }}</H6>
-        </div>
-        <img src="{{ event.smallimage }}">
-        <H2>{{ event.title }}</H2>
-        <H4>{{ event.datetime }}</H4>
-        {{ event.description }}
-        <a href="{{ event.ticketlink }}">BUY TICKETS</a>
+      <div class="card" style="width: 220px;">
+        <a href="" style="text-decoration: none; ">
+          <img class="card-img-top" src="{{ event.smallimage }}"/>
+          <div class="card-body" style="text-align: center;">
+            <h5 style="color: black">{{ event.title }}</h5>
+            <h6 style="color: black">{{ event.datetime }}</h6>
+            <p class="card-text">
+            {{ event.description }}
+            </p>
+          </div>
+        </a>
       </div>
-    </div>
-
     {% endfor %}
 </div>
