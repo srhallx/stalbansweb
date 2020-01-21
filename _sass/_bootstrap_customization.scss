@@ -96,6 +96,18 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
   }
 }
 
+H1.title {
+  font-family: avenir next lt w01 bold,'quattrocento sans 700',Helvetica,sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 3rem;
+}
+
+H6.subtitle {
+  letter-spacing: 4px;
+  color: white;
+}
+
 // Tables ======================================================================
 
 // Forms =======================================================================
@@ -113,6 +125,26 @@ $text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !default;
 // Progress bars ===============================================================
 
 // Containers ==================================================================
+.eventposter { float: left; position: relative; } 
+.container { padding-left: 0px;}
+.floating-title {
+  position: absolute; bottom: 130px; left: 0;
+  text-align: center;
+  width: 100%;
+  //background-color: rgba(0, 0, 0, 0.1);
+}
+
+.verticaltitle {
+  position: absolute; 
+  left:-70px; bottom:120px; 
+  color: white; 
+  opacity: .5;
+  transform: rotate(-90deg); 
+  -webkit-transform: 
+  rotate(-90deg); 
+  width: 200px;
+  font-family: avenir next lt w01 bold,'quattrocento sans 700',Helvetica,sans-serif;
+}
 
 // Images ======================================================================
 img.center {
@@ -120,3 +152,21 @@ img.center {
   margin-left: auto;
   margin-right: auto;
   }
+
+.floating-image {
+  position: absolute; top: 5; left: 0; 
+}
+
+.pt-5, .py-5 {
+  padding-top: 0rem !important;
+  padding-left: 55px !important;
+  padding-bottom: 0rem !important;
+  padding-right: 0rem !important;
+}
+
+// Carousel 
+.carousel-indicators {
+  li {
+    margin-bottom: 70px;
+  }
+}

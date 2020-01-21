@@ -2,39 +2,39 @@
 layout: default
 ---
 
-<div id="wrapper">
-  
-  {%- include carousel.html height="100" unit="%" duration="7" -%}
+<div id="wrapper" style="width: 800px">
+  <div id="imgcarousel">
+      <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          {%- for event in site.posts -%}
+          {%- if forloop.index0 == 0 -%}
+          <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+          {%- else -%}
+          <li data-target="#carouselId" data-slide-to="{{ forloop.index0 }}"></li>
+          {%- endif -%}
+          {%- endfor -%}
+        </ol>
+        <div class="carousel-inner">
+          {% assign activeelementset = false %}
+          {% for event in site.posts %}
+          {% if activeelementset %}
+          <div class="carousel-item" style="height: 800">
+          {% else %}
+            <div class="carousel-item active">
+            {% assign activeelementset = true %}
+          {% endif %}
 
-  <div id="main-wrap">
-    <div class="inner-wrap scroll-pane overthrow">
-      <div id="top-left" class="spot scroll-pane overthrow">
-        <div class="spothead">
-          <h3 class="title">Features</h3>
-        </div>
-        <div class="inner">
-        </div>
-      </div>
-      <div class="middle-center-bottom-right overthrow">
-        <div id="middle-center" class="spot scroll-pane overthrow">
-          <div class="slideshow">
-            <div class="slide" style="background-image:url(spinnerimages/1.jpg);">
-              <div class="slideshow-top">
-                <h5 class="type">Editorial</h5>
-                <div class="masa-logo"><img src="images/masalogo.png" /></div>
+            <div class="d-block w-100" style="height: 800px;">
+              <img class="floating-image" src="images/masalogo.png" />
+              <div class="floating-title">
+                <H1 class="title">{{ event.title }}</H1>
+                <H6 class="subtitle">{{ event.datetime }}</H6>
               </div>
-              <div class="fade-overlay">
-                <div class="pad2">
-                  <h1 class="title"><a href="timelinejazz.html">Timeline Jazz</a></h1>
-                  <h5 class="author">APRIL 19, 2020 - 3:00 PM</h5>
-                </div>
-              </div>
+              <img src="{{ event.largeimage }}">
             </div>
-
-          <div class="cycle-pager"></div>
-
+          </div>
+          {% endfor %}
         </div>
-      </div>
     </div>
   </div>
 </div>
