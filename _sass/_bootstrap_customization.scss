@@ -103,6 +103,14 @@ H1.title {
   font-size: 3rem;
 }
 
+H4.title {
+  font-family: avenir next lt w01 bold,'quattrocento sans 700',Helvetica,sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
 H6.subtitle {
   letter-spacing: 4px;
   color: white;
@@ -128,7 +136,7 @@ H6.subtitle {
 .eventposter { float: left; position: relative; } 
 .container { padding-left: 0px;}
 .floating-title {
-  position: absolute; bottom: 130px; left: 0;
+  position: absolute; bottom: 50px; left: 0;
   text-align: center;
   width: 100%;
   //background-color: rgba(0, 0, 0, 0.1);
@@ -177,11 +185,24 @@ img.center {
   padding-left: 55px !important;
   padding-bottom: 0rem !important;
   padding-right: 0rem !important;
+  display: flex; flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 // Carousel 
 .carousel-indicators {
   li {
-    margin-bottom: 70px;
+    margin-bottom: 1px;
   }
+}
+
+@media screen and (max-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+// Body
+body {
+  background-color: #F6F3FF;
 }
